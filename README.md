@@ -171,19 +171,19 @@ if err != nil {
 
 ### Error Codes
 
-| Code | Description |
-|------|-------------|
-| `INVALID_API_KEY` | Invalid or missing API key |
+| Code                      | Description                        |
+| ------------------------- | ---------------------------------- |
+| `INVALID_API_KEY`         | Invalid or missing API key         |
 | `INVALID_ORGANIZATION_ID` | Invalid or missing organization ID |
-| `VALIDATION_ERROR` | Invalid request data |
-| `UNAUTHORIZED` | Authentication failed |
-| `FORBIDDEN` | Access denied |
-| `NOT_FOUND` | Resource not found |
-| `CONFLICT` | Resource conflict |
-| `ALREADY_EXISTS` | Resource already exists |
-| `INTERNAL_ERROR` | Server error |
-| `NETWORK_ERROR` | Network connectivity issue |
-| `TIMEOUT` | Request timeout |
+| `VALIDATION_ERROR`        | Invalid request data               |
+| `UNAUTHORIZED`            | Authentication failed              |
+| `FORBIDDEN`               | Access denied                      |
+| `NOT_FOUND`               | Resource not found                 |
+| `CONFLICT`                | Resource conflict                  |
+| `ALREADY_EXISTS`          | Resource already exists            |
+| `INTERNAL_ERROR`          | Server error                       |
+| `NETWORK_ERROR`           | Network connectivity issue         |
+| `TIMEOUT`                 | Request timeout                    |
 
 ## Environment Variables
 

@@ -11,10 +11,10 @@ type ErrorCode string
 // Error codes for MsgMorph API errors.
 const (
 	// Client errors
-	ErrInvalidAPIKey        ErrorCode = "INVALID_API_KEY"
+	ErrInvalidAPIKey         ErrorCode = "INVALID_API_KEY"
 	ErrInvalidOrganizationID ErrorCode = "INVALID_ORGANIZATION_ID"
-	ErrMissingRequiredField ErrorCode = "MISSING_REQUIRED_FIELD"
-	ErrValidationError      ErrorCode = "VALIDATION_ERROR"
+	ErrMissingRequiredField  ErrorCode = "MISSING_REQUIRED_FIELD"
+	ErrValidationError       ErrorCode = "VALIDATION_ERROR"
 
 	// Authentication errors
 	ErrUnauthorized ErrorCode = "UNAUTHORIZED"
@@ -36,18 +36,18 @@ const (
 
 // errorMessages provides human-readable hints for common error codes.
 var errorMessages = map[ErrorCode]string{
-	ErrInvalidAPIKey:        "Invalid API key. Please check your MSGMORPH_API_KEY environment variable.",
+	ErrInvalidAPIKey:         "Invalid API key. Please check your MSGMORPH_API_KEY environment variable.",
 	ErrInvalidOrganizationID: "Invalid organization ID. Please check your MSGMORPH_ORGANIZATION_ID environment variable.",
-	ErrUnauthorized:         "Authentication failed. Please verify your API key is correct and has not expired.",
-	ErrForbidden:            "Access denied. Your API key does not have permission to perform this action.",
-	ErrNotFound:             "The requested resource was not found.",
-	ErrConflict:             "A conflict occurred. The resource may already exist or be in an invalid state.",
-	ErrAlreadyExists:        "This resource already exists. Use update instead of create.",
-	ErrValidationError:      "Invalid request data. Please check the required fields.",
-	ErrInternalError:        "An internal server error occurred. Please try again later.",
-	ErrServiceUnavailable:   "The MsgMorph API is temporarily unavailable. Please try again later.",
-	ErrNetworkError:         "Network error. Please check your internet connection and that the API URL is correct.",
-	ErrTimeout:              "Request timed out. Please try again.",
+	ErrUnauthorized:          "Authentication failed. Please verify your API key is correct and has not expired.",
+	ErrForbidden:             "Access denied. Your API key does not have permission to perform this action.",
+	ErrNotFound:              "The requested resource was not found.",
+	ErrConflict:              "A conflict occurred. The resource may already exist or be in an invalid state.",
+	ErrAlreadyExists:         "This resource already exists. Use update instead of create.",
+	ErrValidationError:       "Invalid request data. Please check the required fields.",
+	ErrInternalError:         "An internal server error occurred. Please try again later.",
+	ErrServiceUnavailable:    "The MsgMorph API is temporarily unavailable. Please try again later.",
+	ErrNetworkError:          "Network error. Please check your internet connection and that the API URL is correct.",
+	ErrTimeout:               "Request timed out. Please try again.",
 }
 
 // Error represents an error returned by the MsgMorph API.
